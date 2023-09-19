@@ -1,9 +1,15 @@
+body{
+    background: white;
+}
 .site-header.navbar{
     align-items: center;
 }
 
 p{
     margin-bottom: 1px;
+    font-family:sans-serif;
+    font-weight: bold;
+    color: rgb(22, 2, 58);
 }
 
 p:first-child{
@@ -25,12 +31,8 @@ p:first-child{
     color: rgb(10, 10, 80);
 }
 
-@media (max-width: 576px) {
-    .navbar-expand-lg .navbar-toggler {
-        justify-content: flex-end;
-    }
-
-    .navbar-expand-lg .navbar-collapse {
-        justify-content: flex-start;
-    }
+.navbar-nav a{
+    font-family:sans-serif;
+    font-weight: bold;
+    color: rgb(22, 2, 58);
 }
