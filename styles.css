@@ -115,3 +115,21 @@ p:first-child{
       border: none;
       font-size: 16px;
   }
+
+  .cards-head{
+    margin-top: 50px;
+    text-align: center;
+    background: url(blue-paintbrush.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    height:fit-content;
+    padding: 20px 50px;
+    border: none;
+  }
+
+  .cards-head h2{
+    font-size: 40px;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 900;
+  }
