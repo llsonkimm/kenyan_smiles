@@ -99,7 +99,7 @@ p:first-child{
     background-repeat: no-repeat;
   }
 
-  .map-area{
+  #map{
     height: 500px;
     width: 100%;
     position: relative;
