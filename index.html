@@ -9,6 +9,7 @@
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"></script>
         <link rel="stylesheet" href="styles.css">
+        <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY"></script>
     </head>
 <body>
     <div class="card-group position-relative">
@@ -86,6 +87,12 @@
                   our website, you'll discover a range of tours tailored to suit your unique interests, 
                   from thrilling safaris in iconic national parks to immersive cultural encounters 
                   with local communities.</p>
+                  <p>Our fleet of well-maintained vehicles, including spacious SUVs, comfortable vans, 
+                    and rugged 4x4s, ensures a smooth and enjoyable ride as you traverse Kenya's diverse 
+                    terrains. Behind the wheel are experienced drivers who are not only skilled in navigating 
+                    the country's roads but are also passionate about sharing their insights into Kenya's 
+                    culture, wildlife, and history. They're more than just guides; they're your companions on 
+                    this extraordinary journey.</p>
               </div>
               <div class="col-md-4">
                 <form action="" class="form-control" style="background-color: rgb(224, 142, 41);">
@@ -103,5 +110,56 @@
       <div class="container">
         <a href="/" class="btn" style="border-radius: 5px; font-size: 20px; padding: 20px 20px; background-color: rgb(230, 192, 25);">More About Kenya</a>
       </div>
+      <section style="margin-top: 30px;">
+        <div class="container">
+          <img src="grunge-line.png" alt="underline" style="width: 100%; height: 20px;">
+        </div>
+      </section>
+      <div class="map-area" id="map">
+          <div class=" container map-info">
+            <h1>Kenyan Map</h1>
+            <p>Kenya has set aside about 8 per cent of the total landmass of the country to game reserves. 
+              This land contains 22 National Parks, 28 National Reserves and 5 National Sanctuaries</p>
+          </div>
+    <script>
+        function initMap() {
+            // Create a map centered on Kenya
+            const kenya = { lat: 0.0236, lng: 37.9062 };
+            const map = new google.maps.Map(document.getElementById('map'), {
+                zoom: 6,
+                center: kenya
+            });
+
+            // Define the coordinates of game reserve areas in Kenya
+            const gameReserves = [
+                { name: 'Maasai Mara', lat: -1.4072, lng: 35.1037 },
+                { name: 'Amboseli National Park', lat: -2.6535, lng: 37.2629 },
+                // Add more game reserves here
+            ];
+
+            // Create markers for each game reserve
+            gameReserves.forEach(reserve => {
+                const marker = new google.maps.Marker({
+                    position: { lat: reserve.lat, lng: reserve.lng },
+                    map: map,
+                    title: reserve.name
+                });
+
+                // Add an info window with details about each game reserve
+                const infowindow = new google.maps.InfoWindow({
+                    content: `<h3>${reserve.name}</h3><p>Details about the reserve here.</p>`
+                });
+
+                marker.addListener('click', () => {
+                    infowindow.open(map, marker);
+                });
+            });
+        }
+    </script>
+
+    <!-- Load the map when the page loads -->
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap"></script>
+      </div>
+
 </body>
 </html>
