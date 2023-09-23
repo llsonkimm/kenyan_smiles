@@ -9,7 +9,7 @@
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"></script>
         <link rel="stylesheet" href="styles.css">
-        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA3TOtYMc4lmJQ-ohy-MAxyvyb2wV0ok-A"></script>
+        <script type="module" src="script.js"></script>
     </head>
 <body>
     <div class="card-group position-relative">
@@ -121,50 +121,6 @@
             <p>Kenya has set aside about 8 per cent of the total landmass of the country to game reserves. 
               This land contains 22 National Parks, 28 National Reserves and 5 National Sanctuaries</p>
           </div>
-
-              <script>
-                function initMap() {
-                  var map = new google.maps.Map(document.getElementById('map'), {
-                    zoom: 4,
-                    center: {lat: -1.2833, lng: 36.8167}
-                  });
-
-                  // Add the game reserves to the map.
-                  var gameReserves = [
-                    {
-                      name: "Shimba Hills National Reserve",
-                      location: {lat: -4.3167, lng: 39.4167}
-                    },
-                    {
-                      name: "Mwea National Reserve",
-                      location: {lat: -0.75, lng: 37.5}
-                    },
-                    {
-                      name: "Meru National Park",
-                      location: {lat: 0.0833, lng: 38.4167}
-                    },
-                    {
-                      name: "Buffalo Springs National Reserve",
-                      location: {lat: 0.8, lng: 37.6667}
-                    },
-                    {
-                      name: "Salt Lick Game Lodge",
-                      location: {lat: 0.95, lng: 37.3}
-                    }
-                  ];
-
-                  for (var i = 0; i < gameReserves.length; i++) {
-                    var marker = new google.maps.Marker({
-                      position: gameReserves[i].location,
-                      map: map,
-                      title: gameReserves[i].name
-                    });
-                  }
-                }
-
-                initMap();
-              </script>
-
       </div>
       <section style="margin-top: 30px;">
         <div class="container">
@@ -175,6 +131,8 @@
           <h2 style="text-align: center;margin-top: 30px;">Tailor-made Safaris</h2>
       </div>
 
+    <script>(g=>{var h,a,k,p="The Google Maps JavaScript API",c="google",l="importLibrary",q="__ib__",m=document,b=window;b=b[c]||(b[c]={});var d=b.maps||(b.maps={}),r=new Set,e=new URLSearchParams,u=()=>h||(h=new Promise(async(f,n)=>{await (a=m.createElement("script"));e.set("libraries",[...r]+"");for(k in g)e.set(k.replace(/[A-Z]/g,t=>"_"+t[0].toLowerCase()),g[k]);e.set("callback",c+".maps."+q);a.src=`https://maps.${c}apis.com/maps/api/js?`+e;d[q]=f;a.onerror=()=>h=n(Error(p+" could not load."));a.nonce=m.querySelector("script[nonce]")?.nonce||"";m.head.append(a)}));d[l]?console.warn(p+" only loads once. Ignoring:",g):d[l]=(f,...n)=>r.add(f)&&u().then(()=>d[l](f,...n))})
+        ({key: "AIzaSyBfTy5UQU8XSLY8f3kl1qHWfwCDMmEOxuA", v: "weekly"});</script>
 </body>
 
 </html>

@@ -133,3 +133,8 @@ p:first-child{
     font-family: 'Courier New', Courier, monospace;
     font-weight: 900;
   }
+  #map {
+    height: 700px;
+    width: 95%;
+    margin: auto;
+  }
