@@ -12,31 +12,47 @@
         <script type="module" src="script.js"></script>
     </head>
 <body>
-    <div class="card-group position-relative">
+  <div class="container">
+    <div class="row">
+        <div class=" col-md-4 col-sm-centered centered" style="margin-top: 20px; align-items: center;">
+          <p>Interested in traversing Kenya?</p>
+          <p>Welcome for an epic ride!</p>
+        </div>
+      <div class="col-md-4 col-sm-centered centered">
+          <a href="#">
+            <img src="images/smiles logo.jpg" alt="Logo" style="width: 400px; height: 200px;">
+          </a>
+      </div>
+      <div class="col-md-4 col-sm-centered centered">
+        <div style="display: flex; gap: 20px; margin-top: 20px; margin-left: 40%;">
+          <a href="/"><i class="fab fa-facebook-f fa-2x"></i></a>
+          <a href="/"><i class="fab fa-twitter-square fa-2x"></i></a>
+          <a href="/"><i class="fab fa-youtube-square fa-2x"></i></a>
+          <a href="/"><i class="fab fa-instagram-square fa-2x"></i></a>
+        </div>
+      </div>
+      </div>
+    </div>
+  </div>
+    <!-- <div class="card-group position-relative">
         <div class="card" style="width: 18rem; border: none;">
           <div class="card-body">
                 <p class="card-text text-center">Interested in traversing Kenya?</p>
                 <p class="card-text text-center">Welcome for an epic ride!</p>
           </div>
         </div>
-        <div class="card" style="width: 18rem; border: none;">
+        <div class="card" style="border: none;">
             <div class="card-body">
-                <a class="logo" href="#" style="align-items: center;">
-                    <img src="smiles logo.jpg" alt="Logo" width="300px" height="100px">
-                </a>
+
             </div>
         </div>
         <div class="card" style="width: 18rem; border: none;">
             <div class="card-body">
                 <div class="card-text text-center" style="display:flexbox #2a2d71;">
-                    <a href="/"><i class="fab fa-facebook-f fa-2x"></i></a>
-                    <a href="/"><i class="fab fa-twitter-square fa-2x"></i></a>
-                    <a href="/"><i class="fab fa-youtube-square fa-2x"></i></a>
-                    <a href="/"><i class="fab fa-instagram-square fa-2x"></i></a>
+
                 </div>
             </div>
-        </div>
-    </div>
+        </div> -->
     <header class="site-header">
         <nav class="navbar navbar-expand-lg navbar-light">
           <div class="container">
@@ -70,13 +86,13 @@
           </div>
         </nav>
       </header>
-      <section class="content-intro">
+      <section class="content-intro" style="margin-top: 30px;">
         <h1>Tours & Safaris</h1>
         <h5>Kenya's most experienced tour guide</h5>
       </section>
       <main class="content-section" style="margin-top: 30px;">
         <div class="container">
-          <img src="grunge-line.png" alt="underline" style="width: 100%; height: 20px;">
+          <img src="images/grunge-line.png" alt="underline" style="width: 100%; height: 20px;">
           <div class="article" style="margin-top: 30px; margin-bottom: 30px;">
             <div class="row">
               <div class="col-md-8">
@@ -87,7 +103,7 @@
                   our website, you'll discover a range of tours tailored to suit your unique interests, 
                   from thrilling safaris in iconic national parks to immersive cultural encounters 
                   with local communities.</p>
-                  <p>Our fleet of well-maintained vehicles, including spacious SUVs, comfortable vans, 
+                  <p style="margin-bottom: 20px;">Our fleet of well-maintained vehicles, including spacious SUVs, comfortable vans, 
                     and rugged 4x4s, ensures a smooth and enjoyable ride as you traverse Kenya's diverse 
                     terrains. Behind the wheel are experienced drivers who are not only skilled in navigating 
                     the country's roads but are also passionate about sharing their insights into Kenya's 
@@ -108,11 +124,11 @@
         </div>
       </main>
       <div class="container">
-        <a href="/" class="btn" style="border-radius: 5px; font-size: 20px; padding: 20px 20px; background-color: rgb(230, 192, 25);">More About Kenya</a>
+        <a href="/" class="btn" style="border-radius: 5px; font-size: 20px; padding: 20px 20px; background-color: rgb(25, 230, 179);">More About Kenya</a>
       </div>
       <section style="margin-top: 30px;">
         <div class="container">
-          <img src="grunge-line.png" alt="underline" style="width: 100%; height: 20px;">
+          <img src="images/grunge-line.png" alt="underline" style="width: 100%; height: 20px;">
         </div>
       </section>
       <!-- <div class="map-area" id="map"> -->
@@ -120,22 +136,82 @@
             <div class="container">
               <h2>Kenyan Map</h2>
               <p>Kenya has set aside about 8 per cent of the total landmass of the country to game reserves. 
-                This land contains 22 National Parks, 28 National Reserves and 5 National Sanctuaries</p>
-                <a href="/" class="btn" style="border-radius: 5px; font-size: 20px; 
-                background-color: rgb(25, 230, 179); position: relative; margin-top: 30px;">See Full Map</a>              
+                This land contains 22 National Parks, 28 National Reserves and 5 National Sanctuaries</p>            
+            </div>
+            <div class="container">
+              <a href="/" class="btn" style="border-radius: 5px; font-size: 20px; padding: 10px 20px; background-color: rgb(25, 230, 179); margin: 30px; width: 200px;">See Full Map</a>
             </div>
           </div>
+          
       <section style="margin-top: 30px;">
         <div class="container">
-          <img src="grunge-line.png" alt="underline" style="width: 100%; height: 20px;">
+          <img src="images/grunge-line.png" alt="underline" style="width: 100%; height: 20px;">
         </div>
       </section>
       <div class="cards-head">
           <h2 style="text-align: center;margin-top: 30px;">Tailor-made Safaris</h2>
       </div>
-
-    <!-- <script>(g=>{var h,a,k,p="The Google Maps JavaScript API",c="google",l="importLibrary",q="__ib__",m=document,b=window;b=b[c]||(b[c]={});var d=b.maps||(b.maps={}),r=new Set,e=new URLSearchParams,u=()=>h||(h=new Promise(async(f,n)=>{await (a=m.createElement("script"));e.set("libraries",[...r]+"");for(k in g)e.set(k.replace(/[A-Z]/g,t=>"_"+t[0].toLowerCase()),g[k]);e.set("callback",c+".maps."+q);a.src=`https://maps.${c}apis.com/maps/api/js?`+e;d[q]=f;a.onerror=()=>h=n(Error(p+" could not load."));a.nonce=m.querySelector("script[nonce]")?.nonce||"";m.head.append(a)}));d[l]?console.warn(p+" only loads once. Ignoring:",g):d[l]=(f,...n)=>r.add(f)&&u().then(()=>d[l](f,...n))})
-        ({key: "AIzaSyBfTy5UQU8XSLY8f3kl1qHWfwCDMmEOxuA", v: "weekly"});</script> -->
+     <div class="container cards-section">
+      <div class="row">
+        <div class="col-md-4 col-sm-12">
+          <div class="card">
+            <img src="images/lions.jpg" alt="" class="card-img-top">
+            <div class="card-body">
+              <h5 class="card-title"></h5>
+              <p class="card-text"></p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-12">
+          <div class="card">
+            <img src="images/elephant.jpg" alt="" class="card-img-top">
+            <div class="card-body">
+              <h5 class="card-title"></h5>
+              <p class="card-text"></p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-12">
+          <div class="card">
+            <img src="images/buffalo.jpg" alt="" class="card-img-top">
+            <div class="card-body">
+              <h5 class="card-title"></h5>
+              <p class="card-text"></p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-12">
+          <div class="card">
+            <img src="images/rhino.jpg" alt="" class="card-img-top">
+            <div class="card-body">
+              <h5 class="card-title"></h5>
+              <p class="card-text"></p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-12">
+          <div class="card">
+            <img src="images/leopard.jpg" alt="" class="card-img-top">
+            <div class="card-body">
+              <h5 class="card-title"></h5>
+              <p class="card-text"></p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-12">
+          <div class="card">
+            <img src="images/animal1.jpg" alt="" class="card-img-top">
+            <div class="card-body">
+              <h5 class="card-title"></h5>
+              <p class="card-text"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+     </div>
+  
+<script>(g=>{var h,a,k,p="The Google Maps JavaScript API",c="google",l="importLibrary",q="__ib__",m=document,b=window;b=b[c]||(b[c]={});var d=b.maps||(b.maps={}),r=new Set,e=new URLSearchParams,u=()=>h||(h=new Promise(async(f,n)=>{await (a=m.createElement("script"));e.set("libraries",[...r]+"");for(k in g)e.set(k.replace(/[A-Z]/g,t=>"_"+t[0].toLowerCase()),g[k]);e.set("callback",c+".maps."+q);a.src=`https://maps.${c}apis.com/maps/api/js?`+e;d[q]=f;a.onerror=()=>h=n(Error(p+" could not load."));a.nonce=m.querySelector("script[nonce]")?.nonce||"";m.head.append(a)}));d[l]?console.warn(p+" only loads once. Ignoring:",g):d[l]=(f,...n)=>r.add(f)&&u().then(()=>d[l](f,...n))})
+        ({key: "AIzaSyBfTy5UQU8XSLY8f3kl1qHWfwCDMmEOxuA", v: "weekly"});</script>
 </body>
 
 </html>
