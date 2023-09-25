@@ -10,6 +10,7 @@ body{
 
 .site-header.navbar{
     align-items: center;
+    margin: 100px;
 }
 
 p{
@@ -17,6 +18,10 @@ p{
     font-family:sans-serif;
     font-weight: bold;
     color: #2a2d71;
+}
+
+.navbar ul{
+  margin-top: 20px;
 }
 
 .navbar-nav a{
