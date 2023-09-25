@@ -161,3 +161,20 @@ p{
   .cards-section{
     margin-top: 30px;
   }
+  .cards-section .card{
+    border: none;
+  }
+
+  .cards-section .card a{
+    text-decoration: none;
+    border-bottom: none;
+  }
+
+  .footer-content{
+    background: linear-gradient(135deg, var(--primary), var(--secondary));
+  }
+
+  form .subscribe-section{
+    margin-top: 30px;
+  }
+
